@@ -7,3 +7,5 @@ while True:
     except ValueError:
         print('Invalid input....Exiting..')
         break
+average = sum(numbers) / len(numbers)
+print('The Computed Average is: ', average)
