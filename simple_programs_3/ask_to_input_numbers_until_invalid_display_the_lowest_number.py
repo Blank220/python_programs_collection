@@ -8,3 +8,8 @@ while True:
     except ValueError:
         print("Invalid input....Exiting.")
         break
+
+if numbers:
+    print('Lowest number is', min(numbers))
+else:
+    print('No valid numbers were entered')
