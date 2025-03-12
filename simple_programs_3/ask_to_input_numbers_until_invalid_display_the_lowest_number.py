@@ -1,9 +1,10 @@
 numbers = []
 while True:
+    value = input('')
+
     try:
-        value = int(input())
-        numbers.append(value)
-        print(min(numbers))
+        num = int(value)
+        numbers.append(num)
     except ValueError:
-        print('Invalid input....Exiting.')
+        print("Invalid input....Exiting.")
         break
