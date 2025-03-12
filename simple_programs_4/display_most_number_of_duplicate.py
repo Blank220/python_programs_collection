@@ -3,11 +3,10 @@ numbers = []
 while True:
     value = input('')
     try:
-        value = int(value)
-        numbers.append(value)
-        if numbers.count(value) >= 2:
-            numbers.append(value)
+        num = int(value)
+        numbers.append(num)
     except ValueError:
-        print('m')
+        print('Invalid input...Exiting..')
         break
-print(numbers)
+highest_duplicate = max(set(numbers), key=numbers.count)
+print('Highest duplicate is: ', highest_duplicate)
