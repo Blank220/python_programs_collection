@@ -9,4 +9,5 @@ while True:
         break
 
 numbers.sort()
+numbers.reverse()
 print(numbers)
