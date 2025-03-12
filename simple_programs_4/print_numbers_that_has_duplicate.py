@@ -4,7 +4,7 @@ for num in range(10):
     numbers.append(value)
 
 duplicate_numbers = []
-for num in numbers:
-    if numbers.count(num) >= 2:
+for num in set(numbers):
+    if numbers.count(num) > 1:
         duplicate_numbers.append(num)
 print(duplicate_numbers)
