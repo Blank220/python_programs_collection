@@ -7,3 +7,6 @@ while True:
     except ValueError:
         print('Invalid input.... Exiting..')
         break
+
+numbers.sort()
+print(numbers)
